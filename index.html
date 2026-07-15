@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>不開玩笑炒泡麵｜線上點餐</title>
+    <meta
+      name="description"
+      content="不開玩笑炒泡麵線上點餐頁，選好餐點後自動整理訂單並跳轉到官方 LINE。"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#menu" aria-label="回到菜單">
+        <span class="brand-mark">不</span>
+        <span>
+          <strong>不開玩笑炒泡麵</strong>
+          <small>線上點餐</small>
+        </span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">現炒熱食｜點好直接傳 LINE</p>
+          <p class="pickup-note">
+            收到訂單後我們會回覆製餐大約需要幾分鐘<br>
+            點餐自取總金額打九折，收現金不找零<br>
+            謝謝 🍴₍^ₗ ̫˳ ₗ^₎
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#menu">開始點餐</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="炒泡麵餐點照片">
+          <img src="assets/stir-noodles-hero.png" alt="一碗有高麗菜、豬肉與蔥花的炒泡麵">
+        </div>
+      </section>
+
+      <section class="section-shell menu-layout" id="menu" aria-label="點餐區">
+        <div class="menu-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Menu</p>
+            <h2>選擇餐點</h2>
+          </div>
+
+          <div class="category-tabs" role="tablist" aria-label="菜單分類">
+            <button class="tab-button active" type="button" data-filter="all">全部</button>
+            <button class="tab-button" type="button" data-filter="noodles">炒泡麵</button>
+            <button class="tab-button" type="button" data-filter="meals">飯食</button>
+            <button class="tab-button" type="button" data-filter="snacks">湯品小點</button>
+            <button class="tab-button" type="button" data-filter="drinks">飲料</button>
+          </div>
+
+          <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+        </div>
+
+        <aside class="order-panel" id="order" aria-labelledby="orderTitle">
+          <div class="order-sticky">
+            <div class="section-heading compact">
+              <p class="eyebrow">Order</p>
+              <h2 id="orderTitle">訂單內容</h2>
+            </div>
+
+            <div class="cart-list" id="cartList"></div>
+
+            <div class="cart-summary">
+              <span>自取九折</span>
+              <strong id="subtotal">$0</strong>
+            </div>
+
+            <form class="checkout-form" id="checkoutForm">
+              <label>
+                備註
+                <textarea id="orderNote" name="note" rows="3"></textarea>
+              </label>
+
+              <div class="order-preview">
+                <div class="preview-heading">
+                  <span>LINE 訊息預覽</span>
+                  <button id="copyButton" class="text-button" type="button">複製</button>
+                </div>
+                <pre id="messagePreview"></pre>
+              </div>
+
+              <button class="submit-button" id="submitButton" type="submit">送出訂單到 LINE</button>
+            </form>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <dialog class="item-dialog" id="itemDialog" aria-labelledby="itemDialogTitle">
+      <form method="dialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">Custom</p>
+            <h2 id="itemDialogTitle">品項名稱</h2>
+          </div>
+          <button class="icon-button" value="close" aria-label="關閉客製選項" type="submit">×</button>
+        </div>
+
+        <p class="item-description" id="itemDialogDescription"></p>
+        <div class="item-base-price">
+          <span>基本價格</span>
+          <strong id="itemDialogBasePrice">$0</strong>
+        </div>
+
+        <div class="option-heading">
+          <div>
+            <strong>客製選項</strong>
+            <span id="optionCount">最多可選擇 7 個項目</span>
+          </div>
+        </div>
+        <div class="option-list" id="optionList"></div>
+
+        <label class="quantity-field">
+          數量
+          <input id="itemQuantity" type="number" min="1" max="20" value="1">
+        </label>
+
+        <button class="submit-button" id="addItemButton" type="button">加入訂單</button>
+      </form>
+    </dialog>
+
+    <dialog class="settings-dialog" id="settingsDialog" aria-labelledby="settingsTitle">
+      <form method="dialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">Shop Settings</p>
+            <h2 id="settingsTitle">官方 LINE 設定</h2>
+          </div>
+          <button class="icon-button" value="close" aria-label="關閉設定" type="submit">×</button>
+        </div>
+
+        <label>
+          官方 LINE ID
+          <input id="lineIdInput" placeholder="@378temkb">
+        </label>
+        <p class="helper-text">
+          請使用官方帳號 ID 格式，例如 @378temkb，才能帶入訂單文字。
+        </p>
+
+        <div class="dialog-actions">
+          <button class="secondary-button" value="close" type="submit">取消</button>
+          <button class="primary-button" id="saveLineButton" value="default" type="button">儲存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
