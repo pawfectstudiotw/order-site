@@ -26,12 +26,13 @@
         <div class="hero-copy">
           <p class="eyebrow">現炒熱食｜點好直接傳 LINE</p>
           <p class="pickup-note">
-            收到訂單後我們會回覆製餐大約需要幾分鐘<br>
-            點餐自取總金額打九折，收現金不找零<br>
-            謝謝 🍴₍^ₗ ̫˳ ₗ^₎
+            收到訂單後我們會回覆做餐大約需要幾分鐘<br>
+            點餐自取總金額會打九折，收現金不找零唷～<br>
+            謝謝 🍴 ⌯'Ⱉ'⌯ 🍴
           </p>
           <div class="hero-actions">
             <a class="primary-button" href="#menu">開始點餐</a>
+            <a class="secondary-button" href="#order">查看訂單</a>
           </div>
         </div>
         <div class="hero-media" aria-label="炒泡麵餐點照片">
@@ -67,8 +68,14 @@
             <div class="cart-list" id="cartList"></div>
 
             <div class="cart-summary">
-              <span>自取九折</span>
-              <strong id="subtotal">$0</strong>
+              <div class="summary-row">
+                <span>原價</span>
+                <strong id="originalTotal">$0</strong>
+              </div>
+              <div class="summary-row">
+                <span>自取九折</span>
+                <strong id="subtotal">$0</strong>
+              </div>
             </div>
 
             <form class="checkout-form" id="checkoutForm">
@@ -80,7 +87,6 @@
               <div class="order-preview">
                 <div class="preview-heading">
                   <span>LINE 訊息預覽</span>
-                  <button id="copyButton" class="text-button" type="button">複製</button>
                 </div>
                 <pre id="messagePreview"></pre>
               </div>
