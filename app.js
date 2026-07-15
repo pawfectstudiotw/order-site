@@ -16,7 +16,7 @@ const menuItems = [
     id: "soy-sauce-yi-noodle",
     category: "noodles",
     name: "秘製醬香炒意麵✨",
-    image: "assets/soy-sauce-yi-noodle.png",
+    image: "assets/soy-sauce-yi-noodle.jpg",
     description:
       "靈魂香油蔥與醇厚醬油在高溫火候下激發出迷人琥珀色澤。意麵特殊的孔隙緊緊鎖住每一滴鹹甜醬汁，搭配鮮嫩台灣豬肉絲與鮮蔬，口感濕潤順滑、層次豐富。",
     price: 112,
@@ -25,7 +25,7 @@ const menuItems = [
     id: "thai-boat-noodle",
     category: "noodles",
     name: "泰式船麵風味肉絲炒泡麵",
-    image: "assets/thai-boat-noodle.png",
+    image: "assets/thai-boat-noodle.jpg",
     description:
       "一秒飛泰國！濃郁的泰式船麵醬汁，完美吸附在Q彈的泡麵麵條上，搭配鮮嫩台灣豬肉絲與清脆時蔬，多層次香氣在口中爆發，酸、鹹、甜完美平衡。\n(附一片檸檬與蒜酥一包)\n(不會辣)",
     price: 139,
@@ -34,7 +34,7 @@ const menuItems = [
     id: "shacha-noodle",
     category: "noodles",
     name: "經典沙茶肉絲炒泡麵🍝",
-    image: "assets/shacha-noodle.png",
+    image: "assets/shacha-noodle.jpg",
     description:
       "經典沙茶的濃郁焦香！沙茶的鹹香微辛在舌尖綻放，搭配軟嫩的台灣豬肉絲，讓你每一口都像在吃現炒桌菜般過癮！",
     price: 129,
@@ -43,7 +43,7 @@ const menuItems = [
     id: "kimchi-noodle",
     category: "noodles",
     name: "韓式泡菜肉絲炒泡麵",
-    image: "assets/kimchi-noodle.png",
+    image: "assets/kimchi-noodle.jpg",
     description:
       "韓式正宗酸辣！脆口泡菜與Q彈麵體火熱爆炒，泡菜香入味、台灣鮮嫩豬肉絲，每一口都極致開胃！",
     price: 129,
@@ -52,7 +52,7 @@ const menuItems = [
     id: "lard-scallion-noodle",
     category: "noodles",
     name: "蔥香肉燥肉絲炒泡麵👌",
-    image: "assets/lard-scallion-noodle.png",
+    image: "assets/lard-scallion-noodle.jpg",
     description:
       "經典台味！與靈魂蔥香肉燥風味醬深度揉合，搭配軟嫩的台灣豬肉絲與清脆時蔬，口感層次分明，保證讓你一口接一口，回味無窮！",
     price: 119,
@@ -61,7 +61,7 @@ const menuItems = [
     id: "nanyang-noodle",
     category: "noodles",
     name: "特製南洋風味肉絲炒泡麵🤤",
-    image: "assets/nanyang-noodle.png",
+    image: "assets/nanyang-noodle.jpg",
     description:
       "拒絕平庸調味！特製南洋風味醬汁完美入味，加上鮮嫩台灣豬肉絲爆炒，給您的味蕾感受不同的體驗\n(附一片檸檬)\n(不會辣)",
     price: 129,
@@ -70,7 +70,7 @@ const menuItems = [
     id: "fried-rice",
     category: "meals",
     name: "香蔥肉絲蛋炒飯",
-    image: "assets/fried-rice.png",
+    image: "assets/fried-rice.jpg",
     description:
       "大火翻炒鎖住米飯靈魂，確保粒粒分明、香味飽滿。台灣豬肉絲、鮮蔬與鮮蔥，在熾熱鍋氣中激發出濃郁蔥香，簡單卻極致。",
     price: 119,
@@ -79,7 +79,7 @@ const menuItems = [
     id: "egg-soup",
     category: "snacks",
     name: "紫菜青菜蛋花湯🍵",
-    image: "assets/egg-soup.png",
+    image: "assets/egg-soup.jpg",
     description: "紫菜、青菜與蛋花的清湯，口感清爽、溫潤順口\n（夏季用菜：高麗菜）",
     price: 59,
   },
@@ -103,7 +103,7 @@ const menuItems = [
     id: "thai-milk-tea",
     category: "drinks",
     name: "特製泰式奶茶🍹",
-    image: "assets/thai-milk-tea.png",
+    image: "assets/thai-milk-tea.jpg",
     description:
       "特別調整了傳統泰奶的甜度，保留泰奶獨特的茶香及特有的焦糖感與香料風味，並融合醇厚奶質，口感絲滑而不甜膩。這是一款專為台灣味蕾設計的泰奶，讓您感受正宗南洋風情，卻更顯清爽順口。\n（無供應溫熱）\n（不提供加冰塊服務）",
     price: 75,
@@ -112,7 +112,7 @@ const menuItems = [
     id: "osmanthus-green-tea",
     category: "drinks",
     name: "桂花綠茶🍃",
-    image: "assets/osmanthus-green-tea.png",
+    image: "assets/osmanthus-green-tea.jpg",
     description: "桂花香氣清雅迷人，搭配綠茶回甘清爽\n（無糖、無供應溫熱）\n（不提供加冰塊服務）",
     price: 55,
   },
@@ -120,7 +120,7 @@ const menuItems = [
     id: "jinxuan-black-tea",
     category: "drinks",
     name: "金萱紅茶🍯",
-    image: "assets/jinxuan-black-tea.png",
+    image: "assets/jinxuan-black-tea.jpg",
     description: "香氣柔和帶蜜香，尾韻回甘，茶湯呈紅褐色\n（無糖、無供應溫熱）\n（不提供加冰塊服務）",
     price: 55,
   },
@@ -137,12 +137,12 @@ const state = {
 
 const menuGrid = document.querySelector("#menuGrid");
 const cartList = document.querySelector("#cartList");
+const originalTotalEl = document.querySelector("#originalTotal");
 const subtotalEl = document.querySelector("#subtotal");
 const previewEl = document.querySelector("#messagePreview");
 const form = document.querySelector("#checkoutForm");
 const settingsDialog = document.querySelector("#settingsDialog");
 const lineTargetInput = document.querySelector("#lineIdInput");
-const copyButton = document.querySelector("#copyButton");
 const itemDialog = document.querySelector("#itemDialog");
 const itemDialogTitle = document.querySelector("#itemDialogTitle");
 const itemDialogDescription = document.querySelector("#itemDialogDescription");
@@ -310,6 +310,7 @@ function renderCart() {
       .join("");
   }
 
+  originalTotalEl.textContent = formatCurrency(subtotal());
   subtotalEl.textContent = formatCurrency(discountedTotal());
   updatePreview();
 }
@@ -331,8 +332,8 @@ function buildOrderMessage() {
   if (state.cart.length === 0) {
     lines.push("尚未選擇餐點");
   } else {
-    state.cart.forEach((entry) => {
-      lines.push(`- ${entry.item.name} × ${entry.quantity} = ${formatCurrency(cartEntryTotal(entry))}`);
+    state.cart.forEach((entry, index) => {
+      lines.push(`${index + 1}. ${entry.item.name} × ${entry.quantity} = ${formatCurrency(cartEntryTotal(entry))}`);
       if (entry.options.length) {
         lines.push(`  客製選項：${entry.options.map((option) => option.name).join("、")}`);
       }
@@ -480,14 +481,6 @@ form.addEventListener("submit", async (event) => {
   if (!validateBeforeSend()) return;
 
   window.location.href = makeLineUrl(buildOrderMessage());
-});
-
-copyButton.addEventListener("click", async () => {
-  await navigator.clipboard.writeText(buildOrderMessage());
-  copyButton.textContent = "已複製";
-  window.setTimeout(() => {
-    copyButton.textContent = "複製";
-  }, 1400);
 });
 
 document.querySelector("#settingsButton")?.addEventListener("click", () => {
