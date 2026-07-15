@@ -345,8 +345,7 @@ function buildOrderMessage() {
     `備註：${note}`,
     "",
     `原價：${formatCurrency(subtotal())}`,
-    `自取九折：${formatCurrency(discountedTotal())}`,
-    "收現金不找零"
+    `自取九折：${formatCurrency(discountedTotal())}`
   );
 
   return lines.join("\n");
