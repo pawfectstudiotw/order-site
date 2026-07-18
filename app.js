@@ -114,7 +114,7 @@ const menuItems = [
     name: "桂花綠茶🍃",
     image: "assets/osmanthus-green-tea.jpg",
     description: "桂花香氣清雅迷人，搭配綠茶回甘清爽\n（無糖、無供應溫熱）\n（不提供加冰塊服務）",
-    price: 45,
+    price: 55,
   },
   {
     id: "jinxuan-black-tea",
@@ -122,7 +122,7 @@ const menuItems = [
     name: "金萱紅茶🍯",
     image: "assets/jinxuan-black-tea.jpg",
     description: "香氣柔和帶蜜香，尾韻回甘，茶湯呈紅褐色\n（無糖、無供應溫熱）\n（不提供加冰塊服務）",
-    price: 45,
+    price: 55,
   },
 ];
 
@@ -252,7 +252,7 @@ function subtotal() {
 }
 
 function discountedTotal() {
-  return Math.round(subtotal() * 0.9);
+  return Math.round(subtotal() * 0.8);
 }
 
 function renderMenu() {
@@ -345,7 +345,7 @@ function buildOrderMessage() {
     `備註：${note}`,
     "",
     `原價：${formatCurrency(subtotal())}`,
-    `自取九折：${formatCurrency(discountedTotal())}`
+    `自取八折：${formatCurrency(discountedTotal())}`
   );
 
   return lines.join("\n");
